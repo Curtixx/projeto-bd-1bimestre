@@ -2,7 +2,7 @@ create database banco_series;
 
 use banco_series;
 
-/*create table series(
+create table series(
 id_serie int primary key not null auto_increment,
 nome_serie varchar(15) not null,
 ano_lancamento year not null,
@@ -28,8 +28,7 @@ select nome_serie from series where ano_finaliacao = 'atualmente';
 
 alter table series
 modify ano_finaliacao varchar(20);
-*/
-/*
+
 create table usuario(
 id_usuario int not null,
 serie_assistiu varchar(20) not null,
@@ -38,11 +37,10 @@ temp_atual varchar(20) not null,
 serie int primary key not null,
 foreign key (serie) references series (id_serie)
 )
-*/
-/*
+
 insert into usuario values
 ('197','flash','97','4'),
 ('218','lucifer','76','5');
 
 select * from usuario;
-*/
+
